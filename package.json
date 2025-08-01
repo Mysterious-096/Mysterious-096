@@ -1,0 +1,20 @@
+{
+  "name": "led-driver-testing-app",
+  "version": "1.0.0",
+  "description": "Cross-platform application for LED driver testing data management and Google Drive integration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["led-driver", "testing", "electronics", "manufacturing", "google-drive"],
+  "author": "Jay Mistry <jmistry096@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
